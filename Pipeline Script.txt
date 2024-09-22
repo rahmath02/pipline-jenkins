@@ -1,0 +1,30 @@
+pipeline {
+    
+    agent any;
+    
+    stages{
+        stage("Code"){
+            steps{
+                echo "code clone has been done"
+            }
+        }
+        stage("Build"){
+            steps{
+                echo "Docker through build image"
+            }
+        }
+        stage("Test"){
+            steps{
+                echo "Docker build command test"
+                
+            }
+        }
+        stage("Deploy"){
+            steps{
+                echo "Docker run command done and application running"
+                
+   
+            }
+        }
+    }
+}
